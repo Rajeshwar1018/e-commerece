@@ -1,5 +1,5 @@
 const express=require('express');
-const productservice=require('../services/productservice');
+const productService=require('../services/productservice');
 
 class ProductController {
   
