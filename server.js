@@ -27,6 +27,7 @@ const mongoose = require("mongoose");
 const productRoutes = require("./routes/productRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const cartRoutes=require("./routes/cartRoutes");
+const reviewRoutes=require("./routes/reviewRoutes")
 
 const app = express();
 app.use(express.json()); // ✅ Enable JSON parsing
@@ -35,6 +36,7 @@ app.use(express.json()); // ✅ Enable JSON parsing
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/cart", cartRoutes);
+app.use("/api/review", reviewRoutes);
 
 
 mongoose
